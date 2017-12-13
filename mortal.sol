@@ -4,7 +4,7 @@ import "./owner.sol";
 
 contract Mortal {
 
- function kill() public onlyowner {
+ function kill() public only_owner {
      selfdestruct(owner);
  }
 

@@ -3,7 +3,7 @@ contract Owner {
 
  address owner;
 
- modifier onlyowner() {
+ modifier only_owner() {
     if (msg.sender == owner) {
         _;
     } else {
