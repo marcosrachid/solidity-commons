@@ -15,7 +15,7 @@ contract SenderMap is Mortal {
 
  modifier is_sendable(uint amountInWei) {
    require(myAddressMapping[msg.sender].isAllowed);
-   require(myAddressMapping[msg.sender].maxBalance <= amountInWei);
+   require(myAddressMapping[msg.sender].maxBalance >= amountInWei);
  }
 
  function addAddressToSenderList(address permited, uint maxTransferAmount) public only_owner {
