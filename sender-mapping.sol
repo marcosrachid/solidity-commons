@@ -22,6 +22,10 @@ contract SenderMap is Mortal {
    myAddressMapping[permited] = Permission(true, maxTransferAmount);
  }
 
+ function removeAddressFromSendersList(address theAddress) public only_owner {
+   delete myAddressMapping[theAddress];
+ }
+
  function sendFunds(address receiver, uint amountInWei) public is_sendable(amountInWei) {
    receiver.transfer(amountInWei);
  }
