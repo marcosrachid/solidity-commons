@@ -2,7 +2,7 @@ pragma solidity ^0.4.17;
 
 import "./mortal.sol";
 
-contract SenderMap is Mortal {
+contract SenderMap is Owner {
 
  // key, value
  mapping(address => Permission) myAddressMapping;

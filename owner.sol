@@ -1,5 +1,5 @@
 pragma solidity ^0.4.17;
-contract Owner {
+contract Owner is Mortal {
 
  address owner;
 
