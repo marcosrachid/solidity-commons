@@ -1,6 +1,6 @@
 pragma solidity ^0.4.17;
 
-import "./mortal.sol";
+import "./owner.sol";
 
 contract SenderMap is Owner {
 
