@@ -1,8 +1,6 @@
 pragma solidity ^0.4.17;
 
-import "./mortal.sol";
-
-contract Owner is Mortal {
+contract Owner {
 
  address owner;
 
